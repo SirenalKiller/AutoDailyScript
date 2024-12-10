@@ -130,9 +130,6 @@ def check_daily_challenge_status():
             if text == "C++":
                 element.click()
                 break
-        else:
-            print("未找到C++题解代码")
-            return
 
         time.sleep(1)
         code_elements = driver.find_elements(By.CLASS_NAME, "language-cpp")
